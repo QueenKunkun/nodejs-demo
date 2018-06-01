@@ -1,9 +1,10 @@
-var imgfile = require('./imgfile');
+var file = require('./file');
 
 
 module.exports = {
   home: function (req, res) {
-    res.write('首页');
+    // res.write('首页');
+    file.readFile('./views/home.html', req, res);
   },
   login: function (req, res) {
     res.write('登录页面');
@@ -12,6 +13,6 @@ module.exports = {
     res.write('注册页面');
   },
   img: function (req, res) {
-    imgfile.readImg('./images/psb.jpg', res)
+    file.readImg('./images/psb.jpg', res);
   }
 }
