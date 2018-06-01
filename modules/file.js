@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 module.exports = {
-  readFile: function (file, req, res) {
+  readFile: function (file, res, req) {
     fs.readFile(file, 'utf-8', function(err, data) {
       if (err) throw err;
       res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
