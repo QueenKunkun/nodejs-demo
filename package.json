@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/QueenKunkun/nodejs-demo/issues"
   },
-  "homepage": "https://github.com/QueenKunkun/nodejs-demo#readme"
+  "homepage": "https://github.com/QueenKunkun/nodejs-demo#readme",
+  "dependencies": {
+    "supervisor": "^0.12.0"
+  }
 }

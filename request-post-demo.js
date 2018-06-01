@@ -44,10 +44,15 @@ var request = http.request(options, (res) => {
   res.on('data', (chuck) => {
     console.log(chuck);
   });
+  res.on('end', () => {
+    console.log('提交完毕');
+  })
 });
 
 request.on('error', (error) => {
   console.log(error);
 });
+
+request.write(postData);
 
 request.end();
