@@ -10,7 +10,7 @@ http.createServer(function(req, res) {
     try {
       router[pathName](req, res);
     } catch(err) {
-      console.log('err', err)
+      // console.log('err', err)
       router['home'](req, res);
     }
   }

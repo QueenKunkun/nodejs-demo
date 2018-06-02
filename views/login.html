@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style>
+    .hide{
+      display: none;
+    }
+  </style>
 </head>
 <body>
   登录
-  <form action="./login" method="get">
+  <div class="{infoClass}">
+    Email:{email},密码:{password}
+  </div>
+  <form action="./login" method="post" class="{formClass}">
     <label for="email">
       E-mail: <input type="text" name="email" value="" />
     </label>
